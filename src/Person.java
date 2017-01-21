@@ -1,8 +1,7 @@
-package fixcode;
 /**
  * A simple model for a person with a name.
  * 
- * @author Your Name
+ * @author Wanchanapon Thanwaranurak
  */
 //TODO Complete the missing Javadoc.
 //TODO Fix bad Javadoc tags and poorly written Javadoc.
@@ -19,19 +18,20 @@ public class Person {
 	public Person(String name) {
 		this.name = name;
 	}
-	
-	/*
-	 * Get the person's name.
-	 */
+
+	/**
+	 * Get the person's full name.
+	 * @return the person's full name.
+     */
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
-	
-	/*
-	 * Set or change the person's name.
-	 */
-	public void setname(String newname) {
+	/**
+	 * Set or change the person's full name.
+	 * @param newname to change the person's full name.
+     */
+	public void setName(String newname) {
 		this.name = newname;
 	}
 	
@@ -44,13 +44,13 @@ public class Person {
 	public boolean equals(Person other) {
 		//TODO After running the test program (Main), fix this method.
 		//TODO Use the 4-step template for equals in the Fundamental Methods handout.
-		return name.equals( other.getName() );
+		return this.name.equals( other.getName() );
 	}
 	
 	/**
 	 * Get a string representation of this Person.
 	 */
 	public String toString() {
-		return "Person " + name;
+		return "Person " + this.name;
 	}
 }

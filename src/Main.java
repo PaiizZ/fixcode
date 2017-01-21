@@ -1,4 +1,3 @@
-package fixcode;
 import java.util.Scanner;
 
 /**

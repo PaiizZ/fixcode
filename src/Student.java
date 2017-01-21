@@ -1,5 +1,3 @@
-package fixcode;
-
 //TODO Write class Javadoc
 public class Student extends Person {
 	private long id;
