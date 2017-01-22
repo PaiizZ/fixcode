@@ -3,11 +3,6 @@
  * 
  * @author Wanchanapon Thanwaranurak
  */
-//TODO Complete the missing Javadoc.
-//TODO Fix bad Javadoc tags and poorly written Javadoc.
-//TODO Make sure methods have @param and @return tags (if they return something)
-//TODO Remove all the "TODO" comments after you do them.
-//TODO Fix coding errors.
 public class Person {
 	/** the person's full name. */
 	public String name;
@@ -42,9 +37,14 @@ public class Person {
 	 * @return true if the name is same, false otherwise.
 	 */
 	public boolean equals(Person other) {
-		//TODO After running the test program (Main), fix this method.
-		//TODO Use the 4-step template for equals in the Fundamental Methods handout.
-		return this.name.equals( other.getName() );
+		if( other != null){
+			if( other.getClass() == this.getClass()){
+				if ( this.getName() == other.getName() ){
+					return true ;
+				}
+			}
+		}
+		return false ;
 	}
 	
 	/**

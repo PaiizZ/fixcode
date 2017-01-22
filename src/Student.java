@@ -1,8 +1,15 @@
-//TODO Write class Javadoc
+/**
+ * A simple model for a student with a id.
+ *
+ * @author Wanchanapon Thanwaranurak
+ */
 public class Student extends Person {
+	/** the student id. */
 	private long id;
-	
-	//TODO Write constructor Javadoc
+
+	/**
+	 * Initialize a new Student object.
+	 */
 	public Student(String name, long id) {
 		super(name); // name is managed by Person class
 		this.id = id;
@@ -15,13 +22,36 @@ public class Student extends Person {
 		return String.format("Student %s (%d)", getName(), id);
 	}
 
-	//TODO Fix the parameter!
-	//TODO Write Javadoc and fix equals: two objects are equal if
-	//TODO they are both Students, have same name, *and* have same id.
-	//TODO Use the 4-step template for equals in the Fundamental Methods handout.
+	/**
+	 * Compare student by id.
+	 * They are equal if the id matches.
+	 * @param other is another Student to compare to this one.
+	 * @return true if the id is same, false otherwise.
+     */
 	public boolean equals(Student other) {
-		return this.id == other.id;
+		if( other != null ){
+			if( other.getClass() == this.getClass() ){
+				if ( this.getId() == other.getId() ){
+					return true ;
+				}
+			}
+		}
+		return false ;
 	}
 
-	//TODO Write getter and setter for id.  Write Javadoc, of course.
+	/**
+	 * Get the student id.
+	 * @return the student id.
+     */
+	public long getId() {
+		return this.id;
+	}
+
+	/**
+	 * Set or change the student id.
+	 * @param id to change the student id.
+     */
+	public void setId(long id) {
+		this.id = id;
+	}
 }

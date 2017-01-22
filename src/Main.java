@@ -1,16 +1,9 @@
 import java.util.Scanner;
 
 /**
- * The test methods in this class demonstrate why a class's
- * equals method should always be declared "boolean equals(Object arg)"
- * instead of "boolean equals(Person arg)" or "boolean equals(Student arg)".
- * 
- * Student the main() method and run the code.
- * Can you explain why "equals" gives the wrong answer?
+ * Main class for run application to test method in class.
  *
- * Then fix the equals() in the Person class until it works correct.
- * 
- * @author you 
+ * @author Wanchanapon Thanwaranurak
  */
 public class Main {
 	private static final Scanner console = new Scanner(System.in);
